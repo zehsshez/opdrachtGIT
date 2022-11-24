@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let radius1 = parseFloat(prompt("Wat is de radius van de cilinder 1?"))
+        let hoogte1 = parseFloat(prompt("Wat is de hoogte van de cilinder 1?"))
+        let aantalDecimalen1 = parseFloat(prompt("Hoeveel decimalen wilt u gebruiken voor de berekening van cilinder 1?"))
+
+        let radius2 = parseFloat(prompt("Wat is de radius van de cilinder 2?"))
+        let hoogte2 = parseFloat(prompt("Wat is de hoogte van de cilinder 2?"))
+        let aantalDecimalen2 = parseFloat(prompt("Hoeveel decimalen wilt u gebruiken voor de berekening van cilinder 2?"))
+
+        let volume1 = 3.1415 * radius1 * radius1 * hoogte1
+        let volume2 = 3.1415 * radius2 * radius2 * hoogte2
+       
+        let somVolume = parseInt(volume1 + volume2)
+        
+        document.write(`<p>Het volume van de eerste cilinder met radius ${radius1} en hoogte ${hoogte1} en aantal decimalen ${aantalDecimalen1} is: ${volume1}`)
+        document.write(`<p>Het volume van de tweede cilinder met radius ${radius2} en hoogte ${hoogte2} en aantal decimalen ${aantalDecimalen2} is: ${volume2}`)
+        document.write(`<p>Samen is dit een naar onder afgerond volume van ${somVolume}</p>`)   
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    let voorNaam = "Java";
+    let achterNaam = "Script";
+    let naam = voorNaam + " " + achterNaam;
+    let lengteNaam = naam.length;
+    let fileName = "javaScriptFrameWork";
+    fileName = fileName.toLocaleLowerCase();
+    let fileName1 = fileName.substring(0,10);
+    let fileName2 = fileName.substring(10,19);
+    let varFileName = fileName.charAt(5);
+    let email = "jan.klaassen@mail.com";
+    let emailPosition = email.indexOf("@");
+    let naamEmail = email.substring(0,emailPosition);
+    let tekst = "Deze tekst is te lang en zal worden afgekapt op 8 tekens m.b.v. substr().";
+    let tekst8 = tekst.substr(0,8);
+
+
+    document.write(`Hallo ${naam}.`);
+    document.write(`<p> Jouw naam bevat ${lengteNaam} karakters.</p>`);
+    document.write(`<p>De originele filename is: '${fileName}'</p>`);
+    document.write(`<p>De filename kan beter in kleine letters getypt worden, dus: '${fileName}'</p>`);
+    document.write(`<p>Als je '${fileName}' opsplist, krijg je: '${fileName1}' en '${fileName2}'.</p>`);
+    document.write(`<p>Het zesde karakter (volgens mensen) in '${fileName}' is:'${varFileName}'.</p>`);
+    document.write(`<p>In '${email}' staat  de @ op de positie: ${emailPosition}</p>`);
+    document.write(`<p>De naam is dus:'${naamEmail}'</p>`);
+    document.write(`De originele tekst: '${tekst}'wordt dan: '${tekst8}'`);
+
+  </script>
+</body>
+</html>
